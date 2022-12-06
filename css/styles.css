@@ -1,0 +1,867 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+@import "node_modules/modern-normalize/modern-normalize.css";
+
+/*paleta de colores del diseño*/
+:root {
+  --main-color: #2196f3;
+  --second-color: #212121;
+  --third-color: #757575;
+}
+
+/*Todo el contenido*/
+/* *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+} */
+
+/*Todo el contenido*/
+.body {
+  color: #000000;
+  background: #ffffff;
+  font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
+  box-sizing: border-box;
+}
+
+/*Todo el contenido*/
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+/*Titulo principal*/
+.main-title {
+  color: #ffffff;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  text-align: center;
+  display: inline-block;
+  padding: 150px 130px 150px 150px;
+}
+
+/*Boton Studio*/
+.main-title .main-button {
+  margin-top: 30px;
+  width: 210px;
+  height: 50.33px;
+}
+
+/*Encabezado*/
+.navbar .anchor {
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/*Encabezado*/
+.header {
+  border-bottom: solid 1px #f5f4fa;
+  height: 65px;
+  position: relative;
+}
+/*Encabezado barra navegación*/
+.navbar-menu .filter {
+  color: var(--second-color);
+}
+
+/*Encabezado barra navegación pseudo-elementos*/
+.webstudio:hover::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 48px;
+  border-radius: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 60px;
+  left: 120px;
+}
+/*Encabezado barra navegación pseudo-elementos*/
+.filter1:hover::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 48px;
+  border-radius: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 60px;
+}
+
+/*Encabezado barra navegación pseudo-elementos*/
+.filter2:hover::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 48px;
+  border-radius: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 60px;
+  left: 463px;
+}
+
+/*Encabezado barra navegación pseudo-elementos*/
+.filter3:hover::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 48px;
+  border-radius: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 60px;
+  left: 628px;
+}
+
+/*Encabezado barra navegación pseudo-elementos*/
+.contact3:hover::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 48px;
+  border-radius: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 60px;
+  left: 870px;
+}
+
+/*Encabezado barra navegación pseudo-elementos*/
+.contact4:hover::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 48px;
+  border-radius: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 60px;
+  left: 1072px;
+}
+
+/*Encabezado barra navegación*/
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*Encabezado barra navegación*/
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+/*Encabezado barra navegación*/
+.navar-contact {
+  display: flex;
+  gap: 60px;
+}
+
+/*Encabezado barra navegación iconos svg*/
+.navar-contact .anchor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/*Encabezado barra navegación iconos svg hover*/
+.navar-contact .anchor:hover svg path {
+  fill: var(--main-color);
+}
+
+/*Encabezado barra navegación*/
+.navbar-menu .filter:hover {
+  color: var(--main-color);
+}
+
+/*Encabezado barra de contacto*/
+.navbar .contact {
+  color: var(--third-color);
+}
+
+/*Encabezado barra de contacto*/
+.navbar .contact:hover {
+  color: var(--main-color);
+}
+
+/*Encabezado webstudio*/
+.navbar .webstudio {
+  color: var(--main-color);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+}
+
+/*Imagen de fondo pricipal*/
+.main-title {
+  background: linear-gradient(310deg, #0000005d, #2f303a94),
+    url("./images-css/imagenfondo.jpg");
+  background-size: cover;
+}
+
+/*Boton Studio*/
+.main-title .main-button {
+  color: #ffffff;
+  cursor: pointer;
+  background: var(--main-color);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+}
+
+/*Boton Studio*/
+.main-title .main-button:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background: #188ce8;
+}
+
+/*Botones portafolio*/
+.button {
+  color: var(--second-color);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  border: solid 2px transparent;
+  border-radius: 5px;
+}
+
+/*Botones portafolio*/
+.main-filter .button1 {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 40px;
+  margin-top: 50px;
+  border-radius: 30px;
+  border: solid 2px transparent;
+}
+
+/*Botones portafolio*/
+.button:hover {
+  color: #ffffff;
+  background: var(--main-color);
+  border: solid 2px transparent;
+  border-radius: 5 px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/*Seccion Ventajas*/
+.main-advantages > ul {
+  margin-top: 82px;
+  margin-bottom: 65px;
+  margin-left: -20px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/*Seccion Ventajas*/
+.main-advantages .list {
+  display: flex;
+  gap: 35px;
+  align-items: flex-start;
+}
+
+/*Seccion Ventajas imagenes*/
+.main-advantages img {
+  padding-bottom: 30px;
+}
+
+/*Seccion Ventajas titulo*/
+.main-advantages .title {
+  color: var(--second-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+}
+
+/*Seccion Ventajas descripcion*/
+.main-advantages .description {
+  color: var(--third-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Subtitulos */
+.main-subtitle {
+  color: var(--second-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/*Ventana modal retangulo*/
+.modal {
+  position: relative;
+  width: 590px;
+  height: 690px;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+/*Ventana modal boton x*/
+.btn-modal {
+  position: relative;
+  box-sizing: border-box;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  right: -260px;
+  top: -5px;
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/*Ventana modal boton x*/
+.btn-modal:hover {
+  background-color: #ffffff;
+  color: var(--main-color);
+}
+
+/*Ventana modal ocultar*/
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/*Ventana modal fijar*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  animation: model 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2;
+}
+
+/*Ventana modal animacion*/
+@keyframes model {
+  from {
+    transform: scale(2);
+    filter: blur(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 100%;
+  }
+}
+
+/* Formulario ventana modal */
+.order-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 12px 40px;
+  position: relative;
+  padding-left: 27px;
+}
+
+/* Formulario ventana modal textarea */
+.modal textarea {
+  width: 459px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 5px;
+  resize: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+/* Formulario ventana modal textarea */
+.modal textarea:focus,
+.modal textarea:hover {
+  border: 1px solid var(--main-color);
+}
+
+/* Titulo Formulario ventana modal */
+.modal h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+  color: #212121;
+}
+
+/* labels Formulario ventana modal */
+.modal form label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+/* Formulario ventana modal Rectangulos de los inputs */
+.modal form .rectangle {
+  width: 419px;
+  height: 40px;
+  left: 576px;
+  top: 382px;
+  margin: 10px 10px 10px 0px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 40px;
+}
+
+/*Formulario ventana modal SVG input*/
+.form-svg {
+  position: relative;
+}
+
+/*Formulario ventana modal SVG input*/
+.form-svg svg {
+  position: absolute;
+  top: 30px;
+  left: 12px;
+  fill: #212121;
+}
+
+/*Formulario ventana modal SVG input*/
+.form-svg svg use:hover {
+  fill: var(--main-color);
+}
+
+/* Formulario ventana modal Rectangulos de los inputs */
+.modal form .rectangle:focus,
+.modal form .rectangle:hover {
+  border: 1px solid var(--main-color);
+}
+
+/* Formulario ventana modal checkbox */
+.modal .checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+  margin: 2px;
+  padding: 2px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-top: 20px;
+}
+
+/* Formulario ventana modal checkbox */
+.checkbox input {
+  margin: 5px;
+}
+
+/* Formulario ventana modal checkbox */
+.modal .btn-form {
+  width: 200px;
+  height: 50px;
+  margin-left: 135px;
+  border-radius: 4px;
+  background: var(--main-color);
+  color: #ffffff;
+  border: solid 2px transparent;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+/* Formulario ventana modal boton */
+.modal .btn-form:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background: #188ce8;
+}
+
+/* A que nos dedicamos*/
+.main-what-we-do .list {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  margin-top: 55px;
+  margin-bottom: 88px;
+}
+
+/*A que nos dedicamos*/
+.main-what-we-do li p {
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  width: 373px;
+  color: #ffffff;
+  padding: 28px 0px;
+  position: absolute;
+  top: 1514px;
+}
+
+/*A que nos dedicamos*/
+.main-what-we-do li {
+}
+
+/*Nuestro Equipo*/
+.main-about-us {
+  background: #f5f4fa;
+  padding: 60px 30px 60px 0px;
+}
+/*Nuestro Equipo*/
+.about-us {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15px;
+}
+/*Nuestro Equipo nombre*/
+.main-about-us .name {
+  color: var(--second-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+}
+
+/*Nuestro Equipo li*/
+
+.about-us > li {
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/*Nuestro Equipo p*/
+.about-us li p {
+  text-align: center;
+}
+
+/*Nuestro Equipo la profesion*/
+.main-about-us .profesion {
+  color: var(--third-color);
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/*Nuestro Equipo iconos redes sociales*/
+.about-us li ul {
+  display: flex;
+  gap: 5px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+}
+
+/*Nuestro Equipo iconos redes sociales*/
+.about-us li ul li {
+  display: block;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+
+/*Nuestro Equipo iconos redes sociales*/
+.about-us li ul li:hover {
+  background-color: var(--main-color);
+}
+
+/*Nuestro Equipo iconos redes sociales*/
+.about-us li ul li:hover svg path {
+  fill: #ffffff;
+}
+
+/*Clientes Regulares*/
+.customers {
+  padding-top: 20px;
+}
+/*Clientes Regulares*/
+.customers ul {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+/*Clientes Regulares*/
+.customers ul li {
+  width: 150px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #afb1b8;
+  border-radius: 5px;
+}
+
+/*Clientes Regulares*/
+.customers ul li:hover {
+  border: solid 1px var(--main-color);
+}
+
+/*Clientes Regulares*/
+.customers ul li:hover svg path {
+  fill: var(--main-color);
+}
+
+/*Portafolio titilo del proyecto */
+.project {
+  color: var(--second-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+}
+
+/*Portafolio tipo de proyecto*/
+.type-project {
+  color: var(--third-color);
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/*Imagenes portafolio*/
+.main-images1 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+/*Imagenes portafolio li*/
+
+.main-images1 > li {
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+/*Imagenes portafolio p */
+.card {
+  padding: 20px 10px;
+}
+
+/* Imagenes portafolio texto emergente*/
+.card-emergent {
+  position: absolute;
+  top: 0;
+  height: 294px;
+  width: inherit;
+  background: rgba(33, 150, 243, 0.9);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  transform: translateY(105%);
+  transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Imagenes portafolio texto emergente*/
+.main-images1 li:hover .card-emergent {
+  transform: translateY(0%);
+}
+
+/* Imagenes portafolio texto emergente*/
+.card-image {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Imagenes portafolio texto emergente*/
+.card-emergent > p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 45px 25px;
+}
+
+/*Portafolio imagnes sombra*/
+.main-images1 li:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+/*Footer*/
+.contact2 {
+  background: #2f303a;
+  font-size: 14px;
+  line-height: 1.71;
+  padding: 70px 70px 30px 110px;
+}
+
+/*Footer*/
+.contact-address {
+  margin-left: -40px;
+  width: 200px;
+}
+/*Footer dirección*/
+.contact-address .address {
+  color: #ffffff;
+}
+
+/*Footer email y telefono*/
+.contact-address .address2 {
+  color: rgba(255, 255, 255, 0.6);
+}
+.contact-address .anchor {
+  font-family: "Roboto";
+  font-style: normal;
+}
+/*Footer */
+.contact2 .anchor:hover {
+  color: var(--main-color);
+}
+
+/*Footer webstudio*/
+.contact2 .webstudio {
+  color: var(--main-color);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+}
+
+/*Footer webstudio*/
+footer address {
+  display: flex;
+  gap: 70px;
+}
+
+/*Footer webstudio*/
+.social-media {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-style: normal;
+  margin-top: -20px;
+  font-size: 14px;
+  padding-left: 0px;
+}
+
+/*Footer webstudio*/
+div .social-media {
+  display: flex;
+  gap: 10px;
+}
+
+/*Footer social media*/
+div .social-media li {
+  margin-top: 40px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/*Footer social media*/
+div .social-media li svg path {
+  fill: #ffffff;
+}
+
+/*Footer social media*/
+div .social-media li:hover {
+  background-color: var(--main-color);
+}
+
+/* Formulario suscripcion pie de pagina */
+.suscription-form {
+  margin-top: -30px;
+}
+/* Formulario suscripcion pie de pagina */
+.suscription-form h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-style: normal;
+}
+
+/* Formulario suscripcion pie de pagina */
+.suscription-form input {
+  display: inline;
+  margin-top: 10px;
+  width: 288px;
+  height: 40.5px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 15px;
+}
+
+/* Formulario suscripcion pie de pagina */
+.suscription-form button {
+  width: 150px;
+  height: 45px;
+  background: var(--main-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Formulario suscripcion pie de pagina */
+.suscription-form button:hover {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.form-footer-input svg {
+  fill: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
