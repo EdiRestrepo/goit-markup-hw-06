@@ -305,9 +305,9 @@
   position: relative;
   width: 590px;
   height: 650px;
-  top: 70%;
+  top: 100%;
   left: 50%;
-  transform: translate(-50%, -70%);
+  transform: translate(-50%, -100%);
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
